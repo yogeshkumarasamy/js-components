@@ -1,0 +1,55 @@
+body {
+	margin: 0; padding: 0; font: normal 12px/16px arial;
+}
+p {
+	margin: 0; padding: 0;
+}
+.container {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: #EEEEDC;
+	position: relative;
+}
+.button-holder {
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	transform: translateX(-50%);
+	width: auto;
+}
+.button-holder button+button {
+ 	margin-left: 5px;
+}
+
+#ownAccordion {
+	flex: 0 0 50%;
+	height: auto;
+}
+#ownAccordion > div {
+	margin-bottom: 5px;
+}
+#ownAccordion > div > div {
+	cursor: pointer;
+	box-sizing: border-box;
+	font-size: 18px;
+	padding: 10px 15px;
+	font-style: italic;
+	background-color: #b6b6b6;
+	color: #fff;
+}
+#ownAccordion > div p {
+	font-size: 15px;
+	font-style: normal;
+	box-sizing: border-box;
+	padding: 10px 15px;
+	background-color: #CCCBAF;
+	color: #FAFAA7;
+}
+#ownAccordion .open p {
+	display: block;
+}
+#ownAccordion .close p {
+	display: none;
+}
